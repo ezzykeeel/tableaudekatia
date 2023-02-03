@@ -1,0 +1,16 @@
+.app-header {
+  position: fix;
+  cursor: pointer;
+  top: 0;
+  width: 100%;
+  background-color: var(--theme-bg-color);
+  box-shadow: 5px 5px rgb(74 74 74 / 20%);
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+  div {    
+    &[data-active=true] {
+      border-bottom: 2px solid var(--theme-color);
+    }
+  }
+}
